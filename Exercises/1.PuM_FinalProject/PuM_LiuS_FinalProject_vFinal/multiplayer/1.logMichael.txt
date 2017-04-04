@@ -1,0 +1,318 @@
+Michael Pu
+ICS2O1
+Ms. Strelkovska
+Log - Culminating Project
+
+---MULTIPLAYER.PY----
+
+Before 09/12/2016
+- Created game without using classes
+- Tank movement
+- Missile launch
+- Missile bounce
+- Missile-Missile Collosion
+
+3:05 PM 09/12/2016
+- Downloaded images (explosion, missiles, tank)
+- Used Classes to represent missiles, tanks, and explosion
+- Added move tank function
+- Added collision checker function in missile class (missile-missile, tank-missile)
+
+6:30 PM 09/12/2016
+- Changed explosion animation to middle of the two points of missile collision
+- Added comments to explain functions
+
+7:17 PM 09/12/2016
+- Added load map function
+- Added mapDataBase.txt for map templates
+
+9:04 PM 09/12/2016
+- Added explosion sound function
+
+9:42 PM 09/12/2016
+- Added small explosion sound for missile-missile collision
+- Added big explosion sound for missile-tank collision
+
+10:35 PM 09/12/2016
+- Added dispaly wall function
+- Created wall graphics
+
+11:21 PM 09/12/2016
+- Created wall class
+- Added tank-wall collision checker (to be completed)
+
+1:27 PM 10/12/2016
+- Added boundary wall class
+- Improved tank turning function
+- Replaced out-of-bounds detector with collision with boundary wall
+
+1:55 PM 10/12/2016
+- Added boundary wall to scene
+- Added boundary wall to map
+- Tested improved tank turning function
+- Started on missile-wall collision
+
+3:41 PM 10/12/2016
+- Completed improvements in tank turning function
+- Added ability for tank to turn at bottom and right edge
+
+3:50 PM 10/12/2016
+- Changed missile bouncing function to bounce when collide with wallGroup
+
+5:08 PM 10/12/2016
+- Improved tank turning function
+- Improved missile bounce function (will not bounce inside wall)
+- Improved missile-tank collision detection 
+
+5:16 PM 10/12/2016
+- Added map template
+
+6:51 PM 10/12/2016
+- Added second player function
+- Changed functions so that they are compatiable with two players
+- Tested two player functionality
+- Added tank-tank collision checker
+
+7:06 PM 10/12/2016
+- Added background music function
+- Downloaded background music
+- Added tank 2 images
+
+7:28 PM 10/12/2016
+- Added shooting sound effect
+- Added changeable bounce limit
+
+7:33 PM 10/12/2016
+- Added second test map
+
+12:04 PM 11/12/2016
+- Added resources folder for images, sounds, and maps
+- Added resources folder path to loading resources function
+- Added try and except to loading resources functions to prevent crashing
+- Added "os.environ['SDL_VIDEO_CENTERED'] = '1'" (centers window)
+
+12:25 PM 11/12/2016
+- Fixed "libpng warning: iCCP: known incorrect sRGB profile"
+- Converted png files to sRGB profile
+
+1:07 PM 11/12/2016
+- Added boundary wall creator function into code (not longer needed on map)
+- Added compatiablity with different display resolutions
+
+3:37 PM 11/12/2016
+- Adjusted tank image sizes
+- Added mutant tank (for test)
+
+4:06 PM 11/12/2016
+- Added 3 player support
+- Improved key detection function (works for 1,2,3 players)
+- Added missile count system to Tank class
+
+4:33 PM 11/12/2016
+- Added images for third tank
+- Added tank lives feature
+- Added ghost tank feature
+- Added destroy tank function (when lives run out)
+
+10:39 PM 11/12/2016
+- Improved missile bounce function (tank will be hit if missile is launched against wall)
+- Improved missile-tank detection function (tank on other side of the wall will not be hit)
+
+12:10 PM 12/12/2016
+- Improved compatability with different screen resolutions
+
+7:36 PM 12/12/2016
+- Added full screen compatability detector function
+- Further improved compatability with different screen resolutions
+
+11:23 AM 14/12/2016
+- Added status bar
+- Changed colour of status bar
+- Adjusted game coordinates according to height of status bar
+
+10:33 PM 15/12/2016
+- Started player stats function on status bar (hearts and ammo)
+- Added status bar class
+- Added player life bar class
+- Added player ammo bar class
+- Added ammo regen function
+
+4:01 PM 16/12/2016
+- Changed screen resolution checker from square to pixel checkboard
+
+5:39 PM 17/12/2016
+- Changed height of status bar so that it fits screen
+- Changed sizes of ammo and heart images
+
+7:01 PM 17/12/2016
+- Improved tank ghost function (invisible, invincible after death)
+- Added game over detector
+- Added player rankings function
+
+9:59 PM 17/12/2016
+- Added leaderboard game over function
+- Added rankings text to leaderboard
+
+4:13 PM 18/12/2016
+- Added rankings table to leaderboard
+- Added images to ranking table
+- Added player data to ranking table
+- Added explaination text to ranking table
+
+7:14 PM 18/12/2016
+- Added help button on leaderboard
+- Added mouse over explaination function to leaderboard function
+
+9:11 PM 18/12/2016
+- Started ammo power up function
+
+10:27 PM 18/12/2016
+- Added ammo power up function
+- Started speed power up function
+
+9:56 PM 19/12/2016
+- Finished speed power up function
+- Improved tank turning function (can store key presses in order in a list)
+- Added power up time out function (only lasts for x number of seconds)
+- Added power up display time limit function (only displays for x number of seconds)
+- Added darker game background for leaderboard when game ends 
+- Added victory sound effect 
+- Added leaderboard music
+
+3:03 PM 21/12/2016
+- Added more background music
+
+9:43 PM 21/12/2016
+- Added settings bar on top
+- Added pause button to pause button
+
+10:27 PM 21/12/2016
+- Added pause function
+- Prevented tanks from moving or firing when paused (while loop inside pause function)
+
+5:35 PM 22/12/2016
+- Added pregame countdown
+- Improved pause function
+- Added countdown sound effect
+
+6:15 PM 22/12/2016
+- Improved tank turning function
+
+7:28 PM 22/12/2016
+- Added loading screen
+- Set window position to centre of screen
+
+8:02 PM 22/12/2016
+- Added flashing animation on loading screen
+
+9:19 PM 22/12/2016
+- Improved player info display
+- Improved tank spawning function
+
+10:16 PM 22/12/2016
+- Added comments to code
+- Changed power up time out time to 20 seconds
+- Improved dead mode status bar graphics
+
+10:30 PM 22/12/2016
+- Changed name of file to "multiplayer.py"
+
+9:43 PM 23/12/2016
+- Added single player and multiplayer files to folder for v1 submission
+
+1:24 PM 24/12/2016
+- Added destroyable wall function
+- Added destoryable wall graphics
+
+1:48 PM 24/12/2016
+- Added double life powerup
+- Improved random powerup generator (some will appear more often than others)
+
+11:47 AM 25/12/2016
+- Improved leaderboard object arrangement
+- Added bottom button class for leaderboard
+- Added buttons at bottom of leaderboard (play again, main menu/quit, restart)
+- Added collision with mouse checker for buttons
+
+4:14 PM 25/12/2016
+- Binded player 1 shoot key with mouse click
+- Added scoreboard in leaderboard
+- Added accumlative scoreboard function when "play again" is clicked
+- Added clear scoreboard function when "restart" is clicked
+- Added function to display main menu or quit button depending of its availability
+
+10:02 PM 25/12/2016
+- Added player control set up function before game start
+- Added player control key graphics
+
+11:49 PM 25/12/2016
+- Added key combinations graphics for all players in player control set up function
+
+11:09 AM 26/12/2016
+- Added instructions to player control set up screen
+
+12:28 PM 26/12/2016
+- Added colour changing function (red -> green) when player joined
+- Added ESC function to restart player joining 
+- Added different instruction texts and background colours
+- Added player image and player number when player has joined
+- Added function to assign each player a player number in the order in which they joind
+- Reserved player 1 for WASD-V controls
+ 
+2:27 PM 26/12/2016
+- Implemented function to allow players to choose their controls
+- Added controlNum variable to class Tank (defines the control set it will respond to)
+
+2:51 PM 26/12/2016
+- Improved tank movement function (now according to control set instead of tank number previously)
+
+4:20 PM 26/12/2016
+- Added sound when player joins
+
+2:30 PM 04/01/2017
+- Tested game
+
+8:33 PM 07/01/2017
+- Added help button in user setup screen
+- Added map to map database
+- Improved maps in map database
+- Improved map compatability with different screen resolutions
+
+5:42 PM 09/01/2017
+- Tested game
+- Fixed glitch (when two tanks are stuck together, moving does not change their image)
+  (when tank collides with tank and moves --> keep x,y coordinates, but change face image)
+
+12:16 PM 10/01/2017
+- Tested game
+
+8:16 PM 11/01/2017
+- Added comments
+
+7:25 PM 12/01/2017
+- Improved tank turning and movement function (will be able to slide between tight spaces)
+- Removed missile bounce function
+- Improved missile-wall detection so that all walls in the hit radius will be damaged
+- Adjusted missile launch position
+- Added test mode (infinte ammo)
+- Improved infinite ammo power up image
+
+10:31 PM 12/01/2017
+- Added power up where missiles can destory walls in 1 hit (4 damage per hit)
+- Added image for new power up
+- Added ammo image in status bar for new power up
+- Implemented new power up into the tank, missile, and status bar functions
+
+10:21 PM 13/01/2017
+- Added comments
+
+5:28 PM 14/01/2017
+- Added comments
+
+6:22 PM 14/01/2017
+- Finished adding comments
+- Fixed glitch on leaderboard where the image blinks when partly moused over
+
+3:33 PM 15/01/2017
+- Added a few more comments
+- Improved OS detect path of file function

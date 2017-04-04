@@ -1,0 +1,44 @@
+dec 12, 2016
+Incorporated game file into menu file
+worked on menu
+started to add ammo counter
+
+dec 14, 2016
+began work on single player
+finished menu
+
+dec 15 2016
+added tank movement, background, heart/ammo bars, shooting
+
+dec 16 2016
+added enemy tanks, checking for collisions, updated heart/ammo bars, added powerups function, added enemy shooting
+
+dec 19 2016
+added more powerups, added powerup images/borders, added scores
+
+dec 21 2016
+added pause, start animation, highscores, game over screen
+
+dec 22 2016
+fixed bugs with powerups, added explosions
+
+dec 30 2016
+added sound effects
+
+jan 3 2016
+basic highscores screen
+
+jan 6 2016
+added shielding, shielded/fast enemies
+
+11:31 AM 10/01/2017
+added red flash at life loss
+
+5:02 PM 2017-01-12
+worked on instructions page
+
+2:44 PM 13/01/2017
+finished instructions page, starting to make highscores page look nicer
+
+6:42 PM 2017-01-15
+finish highscores page, add pause screen music, balancing game mechanics, finishing game
